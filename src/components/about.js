@@ -1,7 +1,7 @@
 import React from "react";
 
 const About = () => (
-    <section id="about" className="flex flex-col h-fit items-center pt-10">
+    <section id="about" className="flex flex-col h-fit items-center mx-auto">
         <div className="container text-black mx-auto">
             <h1 className="md:text-3xl sm:text-2xl font-extrabold pb-5">About BoderTact</h1>
             <div className="container text-left w-fit flex flex-col">

@@ -3,12 +3,12 @@ import codeImg from'./shopping.jpg';
 
 const Services = () => (
     <section id="services" className="flex flex-col h-fit items-center pt-10">
-        <div className="container text-black">
+        <div className="container text-black mx-4">
             <h1 className="md:text-xl sm:text-lg mb-3">Our Services</h1>
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col mx-4">
             <div className="container py-4">
-                <div className="flex flex-row">
+                <div className="flex flex-row flex-grow">
                     <div>
                         <h1>Harmonized Code Generation</h1>
                         <p>Proper classification of your products is essential for smooth customs clearance. 

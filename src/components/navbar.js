@@ -1,17 +1,65 @@
 import React from "react";
+import { useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
 
-const Navbar = () => (
-    <nav className="bg-white text-black p-4 w-full  h-34 items-center sticky top-0 shadow-md sm:text-lg md:text-2xl py-5">
-        <div className="container mx-auto flex justify-between items-center">
-            <h1 className="bg-black sm:text-2xl md:text-3xl font-bold">BoderTact</h1>
-            <ul className="flex space-x-6">
-                <li className="sm:text-lg md:text-xl"><a href="#home">Home</a></li>
-                <li className="sm:text-lg md:text-xl"><a href="#about">About</a></li>
-                <li className="sm:text-lg md:text-xl"><a href="#services">Services</a></li>
-                <li className="sm:text-lg md:text-xl"><a href="#pricing">Pricing</a></li>
+const Navbar = () => {
+
+    const [isOpen, setisOpen] = useState(false);
+    const toggleMenu = () => setisOpen(!isOpen);
+
+    return (
+        <div className="bg-gray-800">
+            <div className="lg:hidden flex justify-between mx-10 py-10">
+            {/* Company Name */}
+            <div className="text-lg font-bold">
+              BoderTact
+            </div>
+
+            {/* Hamburger Icon for small screens */}
+            <button
+              className="text-white lg:hidden"
+              onClick={toggleMenu}
+            >
+              {isOpen ? <FaTimes /> : <FaBars />}
+            </button>
+            </div>
+    
+          {/* Navbar Items */}
+          <nav
+            className={`mx-10 py-10 lg:flex transition-all duration-300 ease-in-out ${
+              isOpen ? "block" : "hidden"
+            }`}
+          >
+            {/* Company Name */}
+            <div className="text-lg font-bold">
+              BoderTact
+            </div>
+    
+            <ul className="lg:flex flex-row space-y-2 lg:space-y-0 lg:space-x-5 lg:ml-auto">
+              <li>
+                <a href="#home" className="text-white">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="#about" className="text-white">
+                  About
+                </a>
+              </li>
+              <li>
+                <a href="#services" className="text-white">
+                  Services
+                </a>
+              </li>
+              <li>
+                <a href="#pricing" className="text-white">
+                  Pricing
+                </a>
+              </li>
             </ul>
+          </nav>
         </div>
-    </nav>
-)
+      );
+}
 
 export default Navbar;
