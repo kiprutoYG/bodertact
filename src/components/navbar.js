@@ -11,8 +11,8 @@ const Navbar = () => {
         <div className="bg-gray-800">
             <div className="lg:hidden flex justify-between mx-10 py-10">
             {/* Company Name */}
-            <div className="text-lg font-bold">
-              BoderTact
+            <div className="">
+              <h1 className="lg:text-2xl sm:text-xl font-bold">BoderTact</h1>
             </div>
 
             {/* Hamburger Icon for small screens */}
@@ -31,7 +31,7 @@ const Navbar = () => {
             }`}
           >
             {/* Company Name */}
-            <div className="text-lg font-bold">
+            <div className="lg:text-2xl sm:text-xl font-bold">
               BoderTact
             </div>
     
