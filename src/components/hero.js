@@ -13,13 +13,11 @@ const Hero = () => (
                 <li className="p-2 m-2 xs:p-1 md:p-3 lg:p-5"><FaCheck className="inline-block align-middle mr-3"/>Local Expertise: Based in Kenya, we offer deep insights into local customs processes and challenges.</li>
                 <li className="p-2 m-2 xs:p-1 md:p-3 lg:p-5"><FaCheck className="inline-block align-middle mr-3"/>Seamless Coordination: Bridging the gap between importers and clearing firms for efficient operations.</li>
                 <li className="p-2 m-2 xs:p-1 md:p-3 lg:p-5"><FaCheck className="inline-block align-middle mr-3"/>Holistic Customs Solutions: In-depth assessment of compliance risks, opportunities, and enhancements.</li>
-              </ul>
-            
+              </ul> 
           </div>
-        </div>
-        <div className="h-1/2 md:col-span-1 md:h-full" style={{ backgroundImage: `url(${require("./deliveryman.jpg")})`, backgroundAttachment: "", // Keeps background fixed
+          <div className="h-full object-cover md:col-span-1 md:h-full " style={{ backgroundImage: `url(${require("./deliveryman.jpg")})`, backgroundAttachment: "", // Keeps background fixed
             backgroundSize: "cover"}}>
-
+          </div>
         </div>
       </div>
     </section>
