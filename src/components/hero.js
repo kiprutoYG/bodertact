@@ -2,22 +2,22 @@ import React from "react";
 import { FaCheck } from "react-icons/fa6";
 
 const Hero = () => (
-    <section id="home">
-      <div className="flex flex-col lg:flex-row h-[80vh] lg:h-[50vh]">
-        <div className="relative h-1/2 lg:h-full lg:w-1/2 bg-main bg-cover">
-          <div className="absolute h-1/2 lg:h-full pr-8 ml-6 flex flex-col text-acc text-left py-8">
-            <h1 className="lg:text-4xl sm:text-2xl font-bold py-10">BoderTact</h1>
-            <p className="lg:text-2xl sm:text-lg pb-7">Navigating customs regulations can be complex, but expert guidance ensures a smooth, compliant, and cost-effective supply chain.</p>
-            <div>
-              <ul className="font-semibold lg:text-xl sm:text-sm">
-                <li className="pt-5"><FaCheck className="inline-block align-middle mr-3"/>Local Expertise: Based in Kenya, we offer deep insights into local customs processes and challenges.</li>
-                <li className="py-8"><FaCheck className="inline-block align-middle mr-3"/>Seamless Coordination: Bridging the gap between importers and clearing firms for efficient operations.</li>
-                <li className="pb-5"><FaCheck className="inline-block align-middle mr-3"/>Holistic Customs Solutions: In-depth assessment of compliance risks, opportunities, and enhancements.</li>
+    <section id="home" className="">
+      <div className="md:flex-row grid grid-cols-1 h-screen md:h-[70vh] lg:h-[50vh] md:grid-cols-2 gap-2">
+        <div className=" bg-main h-1/2 md:h-full md:col-span-1">
+          <div className="inset-0 top-3 text-left text-acc lg:p-8 lg:pt-16 lg:align-middle">
+            <h1 className="p-2 m-1 font-semibold text-lg md:p-3 md:text-xl lg:text-3xl">BoderTact</h1>
+            <p className="p-2 m-1 text-lg md:p-3 lg:text-2xl">Navigating customs regulations can be complex, but expert guidance ensures a smooth, compliant, and cost-effective supply chain.</p>
+            
+              <ul className="text-sm font-semibold lg:text-xl">
+                <li className="p-2 m-2 md:p-3 lg:p-5"><FaCheck className="inline-block align-middle mr-3"/>Local Expertise: Based in Kenya, we offer deep insights into local customs processes and challenges.</li>
+                <li className="p-2 m-2 md:p-3 lg:p-5"><FaCheck className="inline-block align-middle mr-3"/>Seamless Coordination: Bridging the gap between importers and clearing firms for efficient operations.</li>
+                <li className="p-2 m-2 md:p-3 lg:p-5"><FaCheck className="inline-block align-middle mr-3"/>Holistic Customs Solutions: In-depth assessment of compliance risks, opportunities, and enhancements.</li>
               </ul>
-            </div>
+            
           </div>
         </div>
-        <div className="relative lg:h-full h-1/2 lg:w-1/2" style={{ backgroundImage: `url(${require("./deliveryman.jpg")})`, backgroundAttachment: "", // Keeps background fixed
+        <div className="h-1/2 md:col-span-1 md:h-full" style={{ backgroundImage: `url(${require("./deliveryman.jpg")})`, backgroundAttachment: "", // Keeps background fixed
             backgroundSize: "cover"}}>
 
         </div>
